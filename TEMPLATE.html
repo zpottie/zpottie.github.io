@@ -8,38 +8,51 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+      /* Remove the navbar's default margin-bottom and rounded borders */ 
+      .navbar {
+          margin-bottom: 0;
+          border-radius: 0;
+      }
     
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+      /* Add a gray background color and some padding to the footer */
+      footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+      }
     
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
+      .carousel-inner {
+          min-height: 40vh;
+      }
     
-  footer {
-      filter: invert(1) brightness(3);
-  }
+      .carousel-inner > .item {
+          position: absolute;
+          top: 0;
+          /* height: 40vh; */
+          left: 0;
+          bottom: 0;
+          right: 0;
+      }
+    
+      .carousel-inner img {
+          width: 100%; /* Set width to 100% */
+          margin: auto;
+          min-height:200px;
+      }
+    
+      footer {
+          filter: invert(1) brightness(3);
+      }
   
-  footer img {
-      width: 36px;
-  }
+      footer img {
+          width: 36px;
+      }
 
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
+      /* Hide the carousel text when the screen is less than 600 pixels wide */
+      /*@media (max-width: 600px) {
+          .carousel-caption {
+              display: none; 
+          }
+      }*/
   </style>
 </head>
 <body>
@@ -132,9 +145,11 @@
         </div>
         <div class="col-sm-4">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui nunc mattis. Urna nec tincidunt praesent semper. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu dui vivamus arcu felis bibendum ut tristique. Enim ut tellus elementum sagittis vitae et leo duis ut. Bibendum arcu vitae elementum curabitur. Viverra tellus in hac habitasse platea dictumst. Vitae purus faucibus ornare suspendisse. Sed felis eget velit aliquet. Vitae congue eu consequat ac felis donec et odio pellentesque. Neque sodales ut etiam sit amet nisl purus in mollis. Vitae turpis massa sed elementum tempus egestas sed sed. Iaculis eu non diam phasellus vestibulum.</p>
+        </div>
+        <div class="col-sm-12">
             <hr>
             <p>Elementum nibh tellus molestie nunc non blandit. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. In pellentesque massa placerat duis. Orci a scelerisque purus semper eget duis. Viverra vitae congue eu consequat. Nec dui nunc mattis enim ut. Massa sapien faucibus et molestie ac feugiat sed. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Vestibulum lorem sed risus ultricies tristique. Felis imperdiet proin fermentum leo. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Ultrices vitae auctor eu augue ut lectus. Ultricies tristique nulla aliquet enim tortor.</p>
-          <p class="text-center"><a href="#"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate Button"></a></p>
+            <p class="text-center"><a href="#"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate Button"></a></p>       
         </div>
     </div>
 </div><br>
