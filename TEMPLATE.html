@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TEMPLATE</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-      /* Remove the navbar's default margin-bottom and rounded borders */ 
-      .navbar {
-          margin-bottom: 0;
-          border-radius: 0;
-      }
+    <title>TEMPLATE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
     
-      /* Add a gray background color and some padding to the footer */
-      footer {
-          background-color: #f2f2f2;
-          padding: 25px;
-      }
-    
-      .carousel-inner {
-          min-height: 40vh;
-      }
-    
-      .carousel-inner > .item {
-          position: absolute;
-          top: 0;
-          /* height: 40vh; */
-          left: 0;
-          bottom: 0;
-          right: 0;
-      }
-    
-      .carousel-inner img {
-          width: 100%; /* Set width to 100% */
-          margin: auto;
-          min-height:200px;
-      }
-    
-      footer {
-          filter: invert(1) brightness(3);
-      }
+        /* Add a gray background color and some padding to the footer */
+        body > footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+            filter: invert(1) brightness(3);
+        }
   
-      footer img {
-          width: 36px;
-      }
+        body > footer img {
+            width: 36px;
+        }
+    
+        .carousel-inner {
+            min-height: 40vh;
+        }
+    
+        .carousel-inner > .item {
+            position: absolute;
+            top: 0;
+            /* height: 40vh; */
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    
+        .carousel-inner img {
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+            min-height:200px;
+        }
+        
+        blockquote {
+            text-align: left;
+        }
+        
+        .smaller-size {
+            transform: scale(0.9);
+        }
 
-      /* Hide the carousel text when the screen is less than 600 pixels wide */
-      /*@media (max-width: 600px) {
-          .carousel-caption {
-              display: none; 
-          }
-      }*/
-  </style>
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        /*@media (max-width: 600px) {
+            .carousel-caption {
+                display: none; 
+            }
+        }*/
+    </style>
 </head>
 <body>
 
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="/">Logo</a>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="/">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/news-events.html">News & Events</a></li>
+                <li><a href="/donation.html">Donation</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/testimonies.html">Testimonies</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><kbd><span class="glyphicon glyphicon-wrench"></span>&nbsp;Under Construction - stay tuned!</kbd></li>
+            </ul>
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/about-us.html">About Us</a></li>
-        <li><a href="/donate.html">Donate</a></li>
-        <li><a href="/contact-us.html">Contact Us</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><span class="glyphicon glyphicon-wrench"></span>Under Construction - stay tuned!</li>
-      </ul>
-    </div>
-  </div>
 </nav>
 
 <div id="carousel-main" class="carousel slide" data-ride="carousel">
@@ -149,7 +157,7 @@
         <div class="col-sm-12">
             <hr>
             <p>Elementum nibh tellus molestie nunc non blandit. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. In pellentesque massa placerat duis. Orci a scelerisque purus semper eget duis. Viverra vitae congue eu consequat. Nec dui nunc mattis enim ut. Massa sapien faucibus et molestie ac feugiat sed. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Vestibulum lorem sed risus ultricies tristique. Felis imperdiet proin fermentum leo. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Ultrices vitae auctor eu augue ut lectus. Ultricies tristique nulla aliquet enim tortor.</p>
-            <p class="text-center"><a href="#"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate Button"></a></p>       
+            <p class="text-center"><a href="#"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" class="smaller-size" alt="Donate Button"></a></p>       
         </div>
     </div>
 </div><br>
