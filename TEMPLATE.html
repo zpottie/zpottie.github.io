@@ -5,91 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */ 
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            box-shadow: 1px 1px 7px -2px #111;
-            z-index: 1;
-        }
-        
-        .navbar a {
-            color: #333;
-        }
-        
-        .navbar .navbar-toggle .icon-bar {
-            background-color: #333;
-        }
-    
-        .carousel-inner {
-            min-height: 40vh;
-        }
-    
-        .carousel-inner > .item {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-        }
-    
-        .carousel-inner img {
-            width: 100%; /* Set width to 100% */
-            margin: auto;
-            min-height:200px;
-        }
-        
-        .mission {
-            margin: 2em 0;
-            padding: 1em;
-            font-size: 1.25em;
-            font-style: italic;
-            font-weight: 700;
-            border: 3px solid #DDD;
-            border-top: none;
-            border-bottom: none;
-        }
-        
-        .profile {
-            transform: rotate(-5deg);
-            border: 1em solid #EFEFEF;
-            border-bottom: 4em solid #EFEFEF;
-            margin-bottom: 2em;
-            box-shadow: 2px 2px 7px -2px #333;
-        }
-        
-        .profile.inverse {
-            transform: rotate(4deg);
-        }
-        
-        blockquote {
-            text-align: left;
-        }
-        
-        .smaller-size {
-            transform: scale(0.9);
-        }
-        
-        /* Add some padding to the footer */
-        body > footer {
-            padding: 25px;
-            border-top: 1px solid #333;
-        }
-  
-        body > footer img {
-            width: 36px;
-        }
-
-        /* Hide the carousel text when the screen is less than 600 pixels wide */
-        /*@media (max-width: 600px) {
-            .carousel-caption {
-                display: none; 
-            }
-        }*/
-    </style>
 </head>
 <body>
 
@@ -131,8 +49,8 @@
       <div class="item active">
         <img src="https://images.pexels.com/photos/236151/pexels-photo-236151.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Sad Person Image">
         <div class="carousel-caption">
-          <h3>See who we are and what work we do...</h3>
-          <a class="btn btn-primary" href="/about-us.html">About Us</a>
+          <h3>See who we are and the kind of work we do...</h3>
+          <a class="btn btn-default" href="/about-us.html">About Us</a>
         </div>      
       </div>
 
@@ -140,14 +58,14 @@
         <img src="https://images.pexels.com/photos/119562/pexels-photo-119562.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Chain Image">
         <div class="carousel-caption">
           <h3>We are stronger together - this is how yuo can help...</h3>
-          <a class="btn btn-primary" href="/get-involved.html">Donations & Sponsorship</a>
+          <a class="btn btn-default" href="/get-involved.html">Donations & Sponsorship</a>
         </div>      
       </div>
       <div class="item">
         <img src="https://images.pexels.com/photos/3680771/pexels-photo-3680771.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Happy Image">
         <div class="carousel-caption">
           <h3>Read testimonials of our impact in the community. Real people, real stories.</h3>
-          <a class="btn btn-primary" href="/404.html">Family Stories</a>
+          <a class="btn btn-default" href="/404.html">Family Stories</a>
         </div>      
       </div>
     </div>
@@ -168,15 +86,15 @@
 deliver long term solutions in the community."</div>
     <h3>What We Do</h3><br>
     <div class="row">
-        <div class="col-xs-6 profile">
-            <img src="https://images.pexels.com/photos/774866/pexels-photo-774866.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-responsive" style="width:100%" alt="Testimonial Mirror Image">
+        <div class="col-xs-6">
+            <img clas=="profile inverse" src="https://images.pexels.com/photos/774866/pexels-photo-774866.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-responsive" style="width:100%" alt="Testimonial Mirror Image">
             <blockquote>
                 <p>"Venenatis cras sed felis eget velit. Fermentum posuere urna nec tincidunt praesent. Elit duis tristique sollicitudin nibh sit amet."</p>
                 <footer>Billy</footer>
             </blockquote>
         </div>
-        <div class="col-xs-6 profile inverse"> 
-            <img src="https://images.pexels.com/photos/769525/pexels-photo-769525.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-responsive" style="width:100%" alt="Testimonial Fireworks Image">
+        <div class="col-xs-6"> 
+            <img class="profile inverse" src="https://images.pexels.com/photos/769525/pexels-photo-769525.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-responsive" style="width:100%" alt="Testimonial Fireworks Image">
             <blockquote>
                 <p>"Imperdiet proin fermentum leo vel orci porta. Tempor orci dapibus ultrices in iaculis nunc."</p>
                 <footer>Suzie</footer>
