@@ -32,7 +32,7 @@
     right: 0;
 }
     
-.carousel-inner img {
+body .carousel-inner > .item img {
     width: 100%; /* Set width to 100% */
     margin: auto;
     height: 40vh;
