@@ -41,7 +41,7 @@
     object-position: center;
 }
 
-.carousel-inner btn {
+.carousel-inner .btn {
     margin-bottom: 1em;
     font-weight: 700;
 }
