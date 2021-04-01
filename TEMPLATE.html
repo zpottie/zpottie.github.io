@@ -12,17 +12,16 @@
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
+            box-shadow: 1px 1px 7px -2px #111;
+            z-index: 1;
         }
-    
-        /* Add a gray background color and some padding to the footer */
-        body > footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-            filter: invert(1) brightness(3);
+        
+        .navbar a {
+            color: #333;
         }
-  
-        body > footer img {
-            width: 36px;
+        
+        .navbar .navbar-toggle .icon-bar {
+            background-color: #333;
         }
     
         .carousel-inner {
@@ -32,7 +31,6 @@
         .carousel-inner > .item {
             position: absolute;
             top: 0;
-            /* height: 40vh; */
             left: 0;
             bottom: 0;
             right: 0;
@@ -44,12 +42,45 @@
             min-height:200px;
         }
         
+        .mission {
+            margin: 2em 0;
+            padding: 1em;
+            font-size: 1.25em;
+            font-style: italic;
+            font-weight: 700;
+            border: 3px solid #DDD;
+            border-top: none;
+            border-bottom: none;
+        }
+        
+        .profile {
+            transform: rotate(-5deg);
+            border: 1em solid #EFEFEF;
+            border-bottom: 4em solid #EFEFEF;
+            margin-bottom: 2em;
+            box-shadow: 2px 2px 7px -2px #333;
+        }
+        
+        .profile.inverse {
+            transform: rotate(4deg);
+        }
+        
         blockquote {
             text-align: left;
         }
         
         .smaller-size {
             transform: scale(0.9);
+        }
+        
+        /* Add some padding to the footer */
+        body > footer {
+            padding: 25px;
+            border-top: 1px solid #333;
+        }
+  
+        body > footer img {
+            width: 36px;
         }
 
         /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -62,7 +93,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
@@ -76,11 +107,9 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/about-us.html">About Us</a></li>
-                <li><a href="/news-events.html">News & Events</a></li>
-                <li><a href="/donation.html">Donation</a></li>
+                <li><a href="/mmet-the-team.html">Meet the Team</a></li>
+                <li><a href="/get-involved.html">Get Involved</a></li>
                 <li><a href="/contact-us.html">Contact Us</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/testimonies.html">Testimonies</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><kbd><span class="glyphicon glyphicon-wrench"></span>&nbsp;Under Construction - stay tuned!</kbd></li>
@@ -102,23 +131,23 @@
       <div class="item active">
         <img src="https://images.pexels.com/photos/236151/pexels-photo-236151.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Sad Person Image">
         <div class="carousel-caption">
-          <h3>Carousel Heading 1</h3>
-          <p>With some text.</p>
+          <h3>See who we are and what work we do...</h3>
+          <a class="btn btn-primary" href="/about-us.html">About Us</a>
         </div>      
       </div>
 
       <div class="item">
         <img src="https://images.pexels.com/photos/119562/pexels-photo-119562.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Chain Image">
         <div class="carousel-caption">
-          <h3>Another Heading</h3>
-          <p>Lorem ipsum...</p>
+          <h3>We are stronger together - this is how yuo can help...</h3>
+          <a class="btn btn-primary" href="/get-involved.html">Donations & Sponsorship</a>
         </div>      
       </div>
       <div class="item">
         <img src="https://images.pexels.com/photos/3680771/pexels-photo-3680771.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Happy Image">
         <div class="carousel-caption">
-          <h3>One More Heading</h3>
-          <p>Ut enim ad minim...</p>
+          <h3>Read testimonials of our impact in the community. Real people, real stories.</h3>
+          <a class="btn btn-primary" href="/404.html">Family Stories</a>
         </div>      
       </div>
     </div>
@@ -134,24 +163,26 @@
     </a>
 </div>
   
-<div class="container text-center">    
+<div class="container text-center">
+    <div class="mission">"We aim to provide immediate relief to local families in need. With the focus to
+deliver long term solutions in the community."</div>
     <h3>What We Do</h3><br>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-xs-6 profile">
             <img src="https://images.pexels.com/photos/774866/pexels-photo-774866.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-responsive" style="width:100%" alt="Testimonial Mirror Image">
             <blockquote>
                 <p>"Venenatis cras sed felis eget velit. Fermentum posuere urna nec tincidunt praesent. Elit duis tristique sollicitudin nibh sit amet."</p>
                 <footer>Billy</footer>
             </blockquote>
         </div>
-        <div class="col-sm-4"> 
+        <div class="col-xs-6 profile inverse"> 
             <img src="https://images.pexels.com/photos/769525/pexels-photo-769525.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-responsive" style="width:100%" alt="Testimonial Fireworks Image">
             <blockquote>
                 <p>"Imperdiet proin fermentum leo vel orci porta. Tempor orci dapibus ultrices in iaculis nunc."</p>
                 <footer>Suzie</footer>
             </blockquote>   
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-12">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui nunc mattis. Urna nec tincidunt praesent semper. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu dui vivamus arcu felis bibendum ut tristique. Enim ut tellus elementum sagittis vitae et leo duis ut. Bibendum arcu vitae elementum curabitur. Viverra tellus in hac habitasse platea dictumst. Vitae purus faucibus ornare suspendisse. Sed felis eget velit aliquet. Vitae congue eu consequat ac felis donec et odio pellentesque. Neque sodales ut etiam sit amet nisl purus in mollis. Vitae turpis massa sed elementum tempus egestas sed sed. Iaculis eu non diam phasellus vestibulum.</p>
         </div>
         <div class="col-sm-12">
@@ -164,9 +195,9 @@
 
 <footer class="container-fluid text-center">
     <p>
-        <a href="#"><img src="https://www.glyphicons.com/img/tools/facebook.svg" alt="Facebook logo"></a>
-        <a href="#"><img src="https://www.glyphicons.com/img/tools/twitter.svg" alt="Twitter logo"></a>
-        <a href="#"><img src="https://www.glyphicons.com/img/tools/instagram.svg" alt="Instagram logo"></a>
+        <a href="/404.html"><img src="https://www.glyphicons.com/img/tools/facebook.svg" alt="Facebook logo"></a>
+        <a href="/404.html"><img src="https://www.glyphicons.com/img/tools/youtube.svg" alt="Twitter logo"></a>
+        <a href="/404.html"><img src="https://www.glyphicons.com/img/tools/instagram.svg" alt="Instagram logo"></a>
     </p>
 </footer>
 
