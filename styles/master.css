@@ -1,0 +1,95 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: 1px 1px 7px -2px #111;
+    z-index: 1;
+}
+        
+.navbar a {
+    color: #333;
+}
+        
+.navbar .navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
+#carousel-main {
+    height: 40vh;
+    min-height: 200px;
+}
+    
+.carousel-inner {
+    height: 40vh;
+    min-height: 200px;
+}
+    
+.carousel-inner > .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+    
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    height: 40vh;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-inner btn {
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+        
+.mission {
+    margin: 2em 0;
+    padding: 1em;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: 700;
+    border: 3px solid #DDD;
+    border-top: none;
+    border-bottom: none;
+}
+        
+.profile {
+    transform: rotate(-5deg);
+    border: 1em solid #EFEFEF;
+    border-bottom: 4em solid #EFEFEF;
+    margin-bottom: 2em;
+    box-shadow: 2px 2px 7px -2px #333;
+}
+        
+.profile.inverse {
+    transform: rotate(4deg);
+}
+        
+blockquote {
+    text-align: left;
+}
+        
+.smaller-size {
+    transform: scale(0.9);
+}
+        
+/* Add some padding to the footer */
+body > footer {
+    padding: 25px;
+    border-top: 1px solid #333;
+}
+  
+body > footer img {
+    width: 36px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+/*@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; 
+    }
+}*/
