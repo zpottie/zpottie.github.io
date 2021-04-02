@@ -5,7 +5,17 @@
     box-shadow: 1px 1px 7px -2px #111;
     z-index: 1;
 }
-        
+
+/* Size logo */
+.navbar-brand {
+    padding: 0 15px;
+}
+
+.navbar-brand .logo {
+    height: 50px;
+}
+
+/* Navbar text colour */
 .navbar a {
     color: #333;
 }
@@ -14,6 +24,8 @@
     background-color: #333;
 }
 
+
+/* Set height for carousel */
 #carousel-main {
     height: 40vh;
     min-height: 200px;
