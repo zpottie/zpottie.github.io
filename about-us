@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Turning Point</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="/"><img class="logo" alt="Turning Point Logo" src="/images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/about-us.html">About Us</a></li>
+                <li><a href="/meet-the-team.html">Meet the Team</a></li>
+                <li><a href="/get-involved.html">Get Involved</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><kbd><span class="glyphicon glyphicon-wrench"></span>&nbsp;Under Construction - stay tuned!</kbd></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>About Us</h3><br>
+            <p>Turning Point Trust is a not-for-profit organisation in New Zealand helping Kiwis in need. We provide tailor-made food boxes that includes breakfast, dinner and snacks to last at least a week. You can either donate food to our charity, donate a box or through monetary donations. We then pack the food boxes based on the family's needs.</p>
+            <h4>Why donate to our charity?</h4>
+            <p>Every day thousands of families are struggling across the Waikato and we want to help by providing immediate relief through food boxes. However, unlike other charities we don’t want to just put a band-aid on the problem. We want to identify the root causes of why a family needed a food box in the first place. This way we deliver long term solutions through budgeting advice, help getting employment, getting a driver's licence or anything else a family might need to turn their lives around.</p>
+            <p>With Turning Point Trust, you can be assured that your donations will go to people in your community that needs it the most. We believe in giving people a hand up rather than a hand out.</p>
+        </div>
+        <div class="col-xs-12"> 
+            <blockquote>
+                <p>"We aim to provide immediate relief to local families in need. With the focus to deliver long term solutions in the community."</p>
+                <footer>Our Mission</footer>
+            </blockquote>   
+        </div>
+    </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+    <p>
+        <a href="/404.html"><img src="https://www.glyphicons.com/img/tools/facebook.svg" alt="Facebook logo"></a>
+        <a href="/404.html"><img src="https://www.glyphicons.com/img/tools/youtube.svg" alt="Twitter logo"></a>
+        <a href="/404.html"><img src="https://www.glyphicons.com/img/tools/instagram.svg" alt="Instagram logo"></a>
+    </p>
+</footer>
+
+</body>
+</html>
