@@ -1,3 +1,8 @@
+/* Make sure hr is proper hr */
+hr {
+    clear: both;
+}
+
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
     margin-bottom: 0;
