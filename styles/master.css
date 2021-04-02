@@ -24,6 +24,10 @@ hr {
 .navbar a {
     color: #333;
 }
+
+.navbar li.active a {
+    font-weight: 700;
+}
         
 .navbar .navbar-toggle .icon-bar {
     background-color: #333;
