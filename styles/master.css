@@ -75,6 +75,7 @@ body .carousel-inner > .item img {
 }
         
 .profile {
+    width: 100%;
     transform: rotate(-5deg);
     border: 1em solid #EFEFEF;
     border-bottom: 4em solid #EFEFEF;
